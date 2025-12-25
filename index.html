@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Temperature Convertor</title>
 </head>
 <body>
@@ -11,18 +12,23 @@
     <form>
         <input type="text" placeholder='0.00' name="temperature">
         <div class="dropdown" id="unit-in">
-            <div class="selected">N/A</div>
-            <div class="options">
-
+            <div onclick='displayToggle("dropdownOut")' class="selected">N/A</div>
+            <div id="dropdown-out">
+                <div class="option">Farenheight</div>
+                <div class="option">Celsius</div>
+                <div class="option">Kelvin</div>
             </div>
         </div>
         <div class="dropdown" id="unit-in">
-            <div class="selected">N/A</div>
-            <div class="options">
-
+            <div onclick='displayToggle("dropdownIn")' class="selected">N/A</div>
+            <div id="dropdown-in">
+                <div class="option">Farenheight</div>
+                <div class="option">Celsius</div>
+                <div class="option">Kelvin</div>
             </div>
         </div>
         <input type="submit" value='convert' id='convert' name="convert">
     </form>
+    <script src="main.js"></script>
 </body>
 </html>

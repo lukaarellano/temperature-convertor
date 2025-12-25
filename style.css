@@ -1,0 +1,22 @@
+.selected {
+    cursor: pointer;
+    border: 1px rgb(118, 118, 118) solid;
+    width: max-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.options {
+    border: 1px rgb(118, 118, 118) solid;
+    width: max-content;
+    cursor: pointer;
+}
+#dropdown-in {
+    border: 1px rgb(118, 118, 118) solid;
+}
+#dropdown-out {
+    border: 1px rgb(118, 118, 118) solid;
+}
+.option:hover {
+    background-color: gray;
+    cursor: pointer;
+}
