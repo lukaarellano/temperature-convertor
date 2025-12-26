@@ -25,10 +25,10 @@ function displayToggle(x) {
 function switchUnit(x, y) {
     if (y == 1) {
         selected1.innerHTML = x;
-        dropdownIn.style.display = 'none';
+        dropdownOut.style.display = 'none';
     } else if (y == 2) {
         selected2.innerHTML = x;
-        dropdownOut.style.display = 'none';
+        dropdownIn.style.display = 'none';
     }
 }
 
