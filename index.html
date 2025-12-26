@@ -12,22 +12,22 @@
     <form>
         <input type="text" placeholder='0.00' name="temperature">
         <div class="dropdown" id="unit-in">
-            <div onclick='displayToggle("dropdownOut")' class="selected">N/A</div>
+            <div onclick='displayToggle("dropdownOut")' id='selected1' class="selected">N/A</div>
             <div id="dropdown-out">
-                <div class="option">Farenheight</div>
-                <div class="option">Celsius</div>
-                <div class="option">Kelvin</div>
+                <div onclick='switchUnit("Farenheight", 1)' class="option">Farenheight</div>
+                <div onclick='switchUnit("Celsius", 1)' class="option">Celsius</div>
+                <div onclick='switchUnit("Kelvin", 1)' class="option">Kelvin</div>
             </div>
         </div>
         <div class="dropdown" id="unit-in">
-            <div onclick='displayToggle("dropdownIn")' class="selected">N/A</div>
+            <div onclick='displayToggle("dropdownIn")' id='selected2' class="selected">N/A</div>
             <div id="dropdown-in">
-                <div class="option">Farenheight</div>
-                <div class="option">Celsius</div>
-                <div class="option">Kelvin</div>
+                <div onclick='switchUnit("Farenheight", 2)' class="option">Farenheight</div>
+                <div onclick='switchUnit("Celsius", 2)' class="option">Celsius</div>
+                <div onclick='switchUnit("Kelvin", 2)' class="option">Kelvin</div>
             </div>
         </div>
-        <input type="submit" value='convert' id='convert' name="convert">
+        <input type="submit" value='Convert' id='convert' name="convert">
     </form>
     <script src="main.js"></script>
 </body>

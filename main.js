@@ -18,6 +18,12 @@ function displayToggle(x) {
         }
     }
 }
-function switchUnit() {
-    let option = document.getElementById('')
+function switchUnit(x, y) {
+    const selected1 = document.getElementById('selected1');
+    const selected2 = document.getElementById('selected2');
+    if (y == 1) {
+        selected1.innerHTML = x;
+    } else if (y == 2) {
+        selected2.innerHTML = x;
+    }
 }
