@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 .selected {
     cursor: pointer;
     border: 1px rgb(118, 118, 118) solid;
@@ -19,4 +21,56 @@
 .option:hover {
     background-color: gray;
     cursor: pointer;
+}
+button, #temperature, .selected {
+    padding: 5px;
+    border-radius: 7.5px;
+    border: black solid 1px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 140%;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+}
+#temperature {
+    border: black solid 1px;
+    padding: 4px;
+    cursor: auto;
+}
+button {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 200;
+    font-size: 100%;
+}
+
+.border {
+    height: 0.001px;
+    border: dashed black 0.0001px;
+    margin-bottom: 2%;
+}
+
+#dropdown-out, #dropdown-in {
+    border-radius: 2.5px;
+    font-size: 120%;
+    font-weight: 350;
+    font-family: "Open Sans", sans-serif;
+    width: fit-content;
+}
+#answer {
+    font-size: 140%;
+    font-family: "Open Sans", sans-serif;
 }
